@@ -1,4 +1,6 @@
 #!/bin/sh
 
 echo "===> Running Rubibot"
+echo "CTRL + C to shutdown"
+
 bundle exec ruby ribot.rb
