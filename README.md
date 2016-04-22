@@ -12,10 +12,6 @@ This is a UserBot for Slack chat written in Ruby. It provides RDoc documentation
 * SLACK_API_TOKEN
 
 ```shell
-sh script/setup
-```
-or
-```shell
 bundle install
 export SLACK_API_TOKEN=your-slack-token
 ```
