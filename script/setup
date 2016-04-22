@@ -1,0 +1,13 @@
+#!/bin/sh
+
+read -p 'Please type your Slack API Token: ' VAR_TOKEN
+
+export SLACK_API_TOKEN=$VAR_TOKEN
+
+bundle install
+
+if [ $? -eq 0 ]; then
+    echo 'Your Bot is ready to run. Type: sh script/run'
+else
+    echo 'Some problem running bundle install. Please check ruby dependencies'
+fi
