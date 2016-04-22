@@ -1,42 +1,45 @@
-# Slack RI Bot
+## Slack RI Bot
 
 This is a UserBot for Slack chat written in Ruby. It provides RDoc documentation in your slack channel by the "ri" command line
 
-## Setting up the project
+### Setting up the project
 **Dependencies**
 * Ruby 2.2.3
 * RSpec
 * slack-ruby-bot [GEM](https://github.com/dblock/slack-ruby-bot)
 
-## Required ENV var
+**Required ENV var**
 * SLACK_API_TOKEN
 
-
+```shell
+sh script/setup
+```
+or
 ```shell
 bundle install
 export SLACK_API_TOKEN=your-slack-token
 ```
 
-## Running
+### Running
 ```shell
 bundle exec ruby ribot.rb
 ```
-or
+or just
 ```shell
-script/run
+sh script/run
 ```
 
-## Testing
+### Testing
 ```shell
 bundle exec rspec
 ```
 
-## Usage
-### In your slack channel
+### Usage
+#### In your slack channel
 ```
   <BOT-NAME> please explain <RUBY-METHOD>
 ```
-### Examples
+#### Examples
 ```
   ribot please explain Hash#with_indifferent_access
 ```
